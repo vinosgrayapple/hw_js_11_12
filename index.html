@@ -3,28 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <title>Статья про создание простой jQuery карусели</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   </head>
   <body>
-  <div class="crousel-arrow-left"><span>Влево</span></div>
-  <div class="carousel-hider">
-  <ul class="carousel-list">
-        <li class="carousel-element"><img src="http://imgur.com/t5rNGTa.jpg" alt="" width="600" height="400"><p>Описание 1</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/EEWNoA8.jpg" alt="" width="600" height="400"><p>Описание 2</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/NUcnWJQ.jpg" alt="" width="600" height="400"><p>Описание 3</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/2Xrjyvv.jpg" alt="" width="600" height="400"><p>Описание 4</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/plqMfnn.jpg" alt="" width="600" height="400"><p>Описание 5</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/kihmsMI.jpg" alt="" width="600" height="400"><p>Описание 6</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/GduNeuR.jpg" alt="" width="600" height="400"><p>Описание 7</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/Rp2AV8c.jpg" alt="" width="600" height="400"><p>Описание 8</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/WsVy2UF.jpg" alt="" width="600" height="400"><p>Описание 9</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/AaPoywZ.jpg" alt="" width="600" height="400"><p>Описание 10</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/VABav75.jpg" alt="" width="600" height="400"><p>Описание 11</p></li>
-        <li class="carousel-element"><img src="http://imgur.com/OiCYAhC.jpg" alt="" width="600" height="400"><p>Описание 12</p></li>
-  </ul>
+  <div class="wrapper">
+        <h2>Карусель картинок</h2>
+        <div class="crousel-arrow-left"><span></span></div>
+        <div class="carousel-hider">
+        <ul class="carousel-list">
+              <li class="carousel-element"><img src="http://imgur.com/t5rNGTa.jpg"><p>Описание 1</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/EEWNoA8.jpg"><p>Описание 2</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/NUcnWJQ.jpg"><p>Описание 3</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/2Xrjyvv.jpg"><p>Описание 4</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/plqMfnn.jpg"><p>Описание 5</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/kihmsMI.jpg"><p>Описание 6</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/GduNeuR.jpg"><p>Описание 7</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/Rp2AV8c.jpg"><p>Описание 8</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/WsVy2UF.jpg"><p>Описание 9</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/AaPoywZ.jpg"><p>Описание 10</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/VABav75.jpg"><p>Описание 11</p></li>
+              <li class="carousel-element"><img src="http://imgur.com/OiCYAhC.jpg"><p>Описание 12</p></li>
+        </ul>
+        </div>
+        <div class="crousel-arrow-right"><span></span></div>
   </div>
-  <div class="crousel-arrow-right"><span>Вправо</span></div>
+  <script src="js/jquery.carousel.js"></script>
   <script src="js/common.js"></script>
   </body>
 </html>

@@ -1,8 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 1300px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+
+}
+h2 {
+	padding: 20px;
+}
 .carousel-hider {
-	width: 600px;
+	width: 975px;
 	overflow: hidden;
 	float: left;
+	
 }
+
+
 .carousel-list {
 	list-style: none;
 	width: 10000px;
@@ -13,28 +30,50 @@
 	display: block;
 	margin-right: 25px;
 	float: left;
+	position: relative;
+	
+}
+ .carousel-element > p{
+	position: absolute;
+	display: block;
+	bottom: 10px;
+	right: 10px;
+	color: #FFF;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+	font-size: 12px;
 }
 .carousel-element img {
-	max-width: 100px;
+	max-width: 300px;
+	min-height: 200px;
 }
+ .crousel-arrow-left {
+	transform: rotate(180deg)
+}
+
 .crousel-arrow-left,
 .crousel-arrow-right {
+	margin-top: 85px;
 	float: left;
 	display: block;
-	border: 1px solid grey;
-	background-color: lightgray;
-	padding: 5px;
-	margin-top: 50px;
+	width: 25px;
+	height: 25px;
+	background: url(http://i.imgur.com/GX8y1DQ.png) no-repeat;
+	/*-webkit-background-size: 100% 100%;
+	     -o-background-size: 100% 100%;
+	        background-size: 100% 100%;*/
+	
 }
+
 .crousel-arrow-left:hover,
 .crousel-arrow-right:hover {
 	cursor: pointer;
-	background-color: gray;
+	background-position: 0 -26px;
 }
 .crousel-arrow-left {
 	margin-right: 25px;
 }
-.crousel-arrow-right {
+ .crousel-arrow-right {
 	margin-left: 25px;
-}
+} 
 
+ 
