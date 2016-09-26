@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+</head>
+<style>
+table {
+    /*width: 100%;  Ширина таблицы */
+    background: white; 
+    color: white;
+    border-spacing: 1px;
+   }
+   td, th {
+    background: maroon;
+    padding: 5px; 
+    text-align: center;
+   }
+</style>
+<body>
+
+  <div id="grid-holder"></div>
+
+  <script type="text/template" id="grid-template">
+    <table>
+    <tr><th>Имя</th> <th>Возраст</th></tr>
+     <% users.forEach(function(item) { %>
+    <tr>
+       <td><%-item.name%></td>
+       <td><%-item.age%></td>
+        </tr>
+      <% }); %>
+    </table>
+  </script>
+
+  <script>
+    var users = [{
+      name: "Вася",
+      age: 10
+    }, {
+      name: "Петя",
+      age: 15
+    }, {
+      name: "Женя",
+      age: 20
+    }, {
+      name: "Маша",
+      age: 25
+    }, {
+      name: "Даша",
+      age: 30
+    }, ];
+
+   var compiled = _.template($('#grid-template').html());
+   var result = compiled(users);
+
+   $('#grid-holder').append(result);
+   /*$('#grid-holder').css({
+     border: '1px solid #000',
+  
+   });*/
+  </script>
+
+</body>
+
+</html>
