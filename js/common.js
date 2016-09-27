@@ -21,6 +21,6 @@ var user2={
 	feedback:"Если нужно, могу провести аналитику игристых вин по предприятиям отрасли."
 };
 var templated = tmpl($('#tmpl').html());
-var result = templated(user);
+var result = templated(user2);
 $('#ejohn-box').append(result);
 //
