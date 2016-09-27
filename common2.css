@@ -1,0 +1,17 @@
+
+
+ 
+
+
+
+
+
+
+.carousel-hider::after,
+.carousel-element::after,
+.crousel-arrow-left::after,
+.crousel-arrow-right::after	 {
+ content:"";
+ display:block;
+ clear:both;
+}

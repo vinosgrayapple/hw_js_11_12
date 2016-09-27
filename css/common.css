@@ -2,76 +2,113 @@
 	margin: 0;
 	padding: 0;
 }
-.wrapper {
-	width: 1300px;
-	margin: 0 auto;
-	text-align: center;
+body{
 	font-family: 'Open Sans', sans-serif;
 
 }
+
+.wrapper {
+	width: 1300px;
+	margin: 0 auto;
+
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top:1px solid lightgray ;
+	text-align: center;
+	background: #fff;
+}
+footer a{
+
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 5px 0;
+	text-decoration: none;
+	color: maroon;
+}
+footer a:hover{
+	color: #fff;
+	background: darkgray;
+	text-decoration: underline;;
+}
+.ejohn-box{
+	margin: 0 auto;
+	background: lightgray;
+	width: inherit;;
+}
+
 h2 {
 	padding: 20px;
+	text-align: center;
+}
+.carousel-box{
+	text-align: center;
+	margin-bottom: 20px;
+	position: relative;
 }
 .carousel-hider {
-	width: 975px;
+	width: 950px;
 	overflow: hidden;
-	float: left;
-	
+	margin: 0 auto;
+	display: inline-block;
+	/*border:1px solid;*/
+
 }
-
-
 .carousel-list {
 	list-style: none;
 	width: 10000px;
+	height: 200px;
 	padding: 0;
-	position: relative;
+	/*position: relative;*/
+
 }
 .carousel-element {
-	display: block;
-	margin-right: 25px;
+	/*display: inline-block;*/
 	float: left;
 	position: relative;
-	
-}
- .carousel-element > p{
-	position: absolute;
-	display: block;
-	bottom: 10px;
-	right: 10px;
-	color: #FFF;
-	text-shadow: 1px 1px 2px black, 0 0 1em black;
-	font-size: 12px;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+	margin-right: 25px;
 }
 .carousel-element img {
 	max-width: 300px;
 	min-height: 200px;
 }
- .crousel-arrow-left {
-	transform: rotate(180deg)
-}
-
 .crousel-arrow-left,
 .crousel-arrow-right {
-	margin-top: 85px;
-	float: left;
-	display: block;
-	width: 25px;
-	height: 25px;
-	background: url(http://i.imgur.com/m3rUIFh.png) no-repeat;
-	
-	
+	/*line-height: 200px;*/
+ /*margin-top: 85px;*/
+ display: inline-block;
+ width: 25px;
+ height: 25px;
+ background: url(http://i.imgur.com/m3rUIFh.png) no-repeat;
 }
-
 .crousel-arrow-left:hover,
 .crousel-arrow-right:hover {
-	cursor: pointer;
-	background-position: 0 -26px;
+ cursor: pointer;
+ background-position: 0 -26px;
 }
 .crousel-arrow-left {
-	margin-right: 25px;
+ transform: rotate(180deg)
 }
- .crousel-arrow-right {
-	margin-left: 25px;
-} 
-
- 
+.crousel-arrow-left {
+ margin-right: 25px;
+ margin-bottom: 65px;
+}
+.crousel-arrow-right {
+ margin-left: 25px;
+ margin-bottom: 65px;
+}
+.carousel-element > p{
+ position: absolute;
+ display: block;
+ bottom: 10px;
+ right: 10px;
+ color: #FFF;
+ text-shadow: 1px 1px 2px black, 0 0 1em black;
+ font-size: 12px;
+}
