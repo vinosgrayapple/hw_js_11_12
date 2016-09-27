@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>HW_JS_11_12</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">   -->
     <link rel="stylesheet" href="css/common.css">
+
+    <script src="https://use.fonticons.com/0dea1753.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/lodash/4.16.2/lodash.min.js"></script>
     <script src="js/templating.js"></script>
@@ -37,10 +40,78 @@
 <!-- end Карусель -->
 
 <!-- begin Template JavaScript Micro-Templating -->
-<div class="ejohn-box">
-1
-</div>
+<h2>Шаблонизатор от <i>John Resig</i></h2>
+<div id="ejohn-box"></div>
+<script type="text/template" id="tmpl">
+<div class="fio">
+
+	<p class="ksu">
+		<h1><%=user.fio%></h1>
+	</p>
+
+	<img class="center" src="<%=user.img%>" alt="<%=user.fio%>" />
+
+	<div class="under_img">
+		<%=user.prof%>
+	</div>
+	<div class="line"></div>
+	</div>
+	<div class="my_wishes">
+		<p><h3>Хочу учить frontend, потому что:</h3></p>
+    <ul>
+      <% for (var i = 0; i < user.wishes.length; i++) { %>
+        <li><%=user.wishes[i]%></li>
+
+        <% } %>
+    </ul>
+	</div>
+	<div class="line"></div>
+	<div class="contacts">
+		<p><h3>Мой контактный телефон :</h3></p>
+		<i class="fa fa-phone fa-1x"></i>  <%=user.phone%>
+
+		<p>Мой профиль Facebook&trade; :</p>
+		<i class="fa fa-facebook-official"></i>
+		<a href="https://www.facebook.com/vinosgray"> Комаричев Сергей</a>
+	</div>
+	<div class="line"></div>
+	<div class="feedback">
+		<p><h3>Мой фидбэк:</h3></p>
+		<p><%=user.feedback%></p>
+	</div>
+
+
+
+
+
+  <!-- <h2><%= user.fio %></h2>
+  <img src="<%=user.img%>">
+  <p><%=user.prof%></p>
+  <div class="line"></div>
+  <h3>Хочу учить фронтенд, потому что:</h3>
+  <ul>
+    <% for (var i = 0; i < user.wishes.length; i++) { %>
+      <li><%=user.wishes[i]%></li>
+
+      <% } %>
+  </ul>
+<div class="line"></div>
+<h3>Мой контактный телефон:</h3>
+<p><%=user.phone%></p>
+<h3>Мои профили в соцсетях:</h3>
+<ul>
+  <% for (var i = 0; i < user.society.length; i++) { %>
+    <li><a href="<%=user.society[i]%>" target="_blank"><%=user.society[i]%></a></li>
+
+    <% } %>
+</ul>
+<div class="line"></div>
+<h3>Мой фидбэк:</h3>
+<p><%=user.feedback%></p> -->
+</script>
 <!-- end Template JavaScript Micro-Templating -->
+
+
   </div>
   <footer>
 

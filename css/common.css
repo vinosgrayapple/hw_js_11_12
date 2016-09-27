@@ -4,9 +4,12 @@
 }
 body{
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 
 }
-
+.strong{
+	font-weight: 600;
+}
 .wrapper {
 	width: 1300px;
 	margin: 0 auto;
@@ -33,11 +36,6 @@ footer a:hover{
 	color: #fff;
 	background: darkgray;
 	text-decoration: underline;;
-}
-.ejohn-box{
-	margin: 0 auto;
-	background: lightgray;
-	width: inherit;;
 }
 
 h2 {
@@ -111,4 +109,59 @@ h2 {
  color: #FFF;
  text-shadow: 1px 1px 2px black, 0 0 1em black;
  font-size: 12px;
+}
+
+#ejohn-box{
+	margin: 0 auto;
+	background: lightgray;
+	width: inherit;
+	margin-bottom: 50px;
+	padding: 40px;
+}
+
+#ejohn-box p {
+	margin-bottom: 20px;
+}
+
+#ejohn-box .main {
+	width: 700px;
+	background-color: #fff;
+	margin: auto;
+	padding: 30px 0;
+}
+
+#ejohn-box .fio {
+	text-align: center;
+
+}
+
+#ejohn-box.ksu {
+	font-size: 3em;
+}
+
+
+
+#ejohn-box img {
+	width: 200px;
+
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+	}
+
+#ejohn-box .under_img {
+	padding: 25px;
+}
+
+#ejohn-box .line {
+	border-top: 1px solid #aaa;
+	margin: 20px 10%;
+}
+#ejohn-box .feedback, #ejohn-box .contacts, #ejohn-box .my_wishes {
+	margin-left: 11%;
+}
+#ejohn-box .contacts {
+	margin-bottom: 20px;
+}
+#ejohn-box .feedback {
+	padding: 20px 0;
 }
