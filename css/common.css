@@ -119,6 +119,7 @@ h2 {
 	width: inherit;
 	margin-bottom: 50px;
 	padding: 40px;
+	border: 1px solid darkgray;
 }
 
 #ejohn-box p {
@@ -173,7 +174,7 @@ h2 {
 /*====================*/
 #lodash-box{
 	margin: 0 auto;
-	background: #F0FFFF;
+	background: rgba(224, 224, 224,.4);;
 	width: inherit;
 	margin-bottom: 50px;
 	padding: 40px;
