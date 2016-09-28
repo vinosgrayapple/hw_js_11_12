@@ -7,6 +7,9 @@ body{
 	font-weight: 300;
 
 }
+.title{
+	color: maroon;
+}
 .strong{
 	font-weight: 600;
 }
@@ -111,6 +114,7 @@ h2 {
  font-size: 12px;
 }
 
+
 #ejohn-box{
 	margin: 0 auto;
 	background: lightgray;
@@ -154,14 +158,76 @@ h2 {
 
 #ejohn-box .line {
 	border-top: 1px solid #aaa;
-	margin: 20px 10%;
+	margin: 20px 27%;
 }
-#ejohn-box .feedback, #ejohn-box .contacts, #ejohn-box .my_wishes {
-	margin-left: 11%;
+#ejohn-box .feedback,
+#ejohn-box .contacts,
+#ejohn-box .my_wishes,
+#ejohn-box .soc        {
+	margin-left: 31%;
 }
-#ejohn-box .contacts {
+#ejohn-box .contacts, .soc {
 	margin-bottom: 20px;
 }
 #ejohn-box .feedback {
+	padding: 20px 0;
+}
+/*====================*/
+#lodash-box{
+	margin: 0 auto;
+	/*background: lightgray;*/
+	width: inherit;
+	margin-bottom: 50px;
+	padding: 40px;
+	border: 1px solid lightgray;
+}
+
+#lodash-box p {
+	margin-bottom: 20px;
+}
+
+#lodash-box .main {
+	width: 700px;
+	background-color: #fff;
+	margin: auto;
+	padding: 30px 0;
+}
+
+#lodash-box .fio {
+	text-align: center;
+
+}
+
+#lodash-box.ksu {
+	font-size: 3em;
+}
+
+
+
+#lodash-box img {
+	width: 200px;
+
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+	}
+
+#lodash-box .under_img {
+	padding: 25px;
+}
+
+#lodash-box .line {
+	border-top: 1px solid #aaa;
+	margin: 20px 27%;
+}
+#lodash-box .feedback,
+#lodash-box .contacts,
+#lodash-box .my_wishes,
+#lodash-box .soc        {
+	margin-left: 31%;
+}
+#lodash-box .contacts, .soc {
+	margin-bottom: 20px;
+}
+#lodash-box .feedback {
 	padding: 20px 0;
 }
