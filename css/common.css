@@ -81,8 +81,6 @@ h2 {
 }
 .crousel-arrow-left,
 .crousel-arrow-right {
-	/*line-height: 200px;*/
- /*margin-top: 85px;*/
  display: inline-block;
  width: 25px;
  height: 25px;
@@ -175,7 +173,7 @@ h2 {
 /*====================*/
 #lodash-box{
 	margin: 0 auto;
-	/*background: lightgray;*/
+	background: #F5FFFA;
 	width: inherit;
 	margin-bottom: 50px;
 	padding: 40px;
